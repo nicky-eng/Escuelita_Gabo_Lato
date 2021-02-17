@@ -1,9 +1,6 @@
-from Ej_6_1 import *
+from Ej_6_2 import *
 
 a = 'Nicolas'
+separ = ','
 
-primeros_dos_caracteres(a)
-ultimos_tres_caracteres(a)
-cada_dos_caracteres(a)
-cadena_al_reves(a)
-cadena_plus_al_reves(a)
+print(insertar_caracter(a, separ))
