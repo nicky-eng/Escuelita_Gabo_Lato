@@ -1,6 +1,8 @@
 from Ej_6_2 import *
 
-a = 'Nicolas'
-separ = ','
+a = 'abcdefghijklmnoxxpqrstuvxyz'
+separ = '.'
 
-print(insertar_caracter(a, separ))
+b = caracter_cada_tres(a, separ)
+
+print(b)
