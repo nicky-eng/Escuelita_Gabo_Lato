@@ -1,8 +1,9 @@
 from Ej_6_2 import *
 
-a = 'abcdefghijklmnoxxpqrstuvxyz'
-separ = '.'
+a = 'Nicolas_es_un_genio,_tío!'
+separ = '/'
+maxi = 5
 
-b = caracter_cada_tres(a, separ)
+b = insertar_caracter(a, separ, maxi)
 
 print(b)
