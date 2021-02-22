@@ -40,3 +40,6 @@ def caracter_cada_tres(cadena, caracter):
         contador += 1
     
     return nueva_cadena
+
+b = '1234568959300322'
+print(caracter_cada_tres(b, '.'))
