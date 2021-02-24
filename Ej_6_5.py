@@ -15,8 +15,8 @@ def primeras_letras(cadena):
 
     return nueva_cadena
 #Descomentar para probar la función.
-#f = ' Nicolas   Andres Oyarzabal  '
-#print(primeras_letras(f))
+f = ' Nicolas   Andres Oyarzabal  '
+print(primeras_letras(f))
 
 def mayuscula_en_primera_letra(cadena):
     """Función que capitaliza cada palabra de una cadena."""
@@ -65,5 +65,5 @@ def palabras_comienzan_con_letra(cadena):
     return nueva_cadena    
 
 #Descomentar para probar la función.
-mu = 'Ayer andábamos por el alambrado'
-print(palabras_comienzan_con_letra(mu))
+#mu = 'Ayer andábamos por el alambrado'
+#print(palabras_comienzan_con_letra(mu))

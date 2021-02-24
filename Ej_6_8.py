@@ -8,6 +8,6 @@ def binario_a_decimal(numero):
         posicion += 1
     return numero_decimal
 
-#n = '1010'
-#print(binario_a_decimal(n))
+n = '1010'
+print(binario_a_decimal(n))
         
