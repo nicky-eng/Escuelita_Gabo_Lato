@@ -18,7 +18,8 @@ def dic_contar_palabras(cadena):
                     palabra_aux = ''
             else:
                 palabra_aux = palabra_aux + i
-    if palabra_aux in dic:
+    if palabra_aux in dic: #Agrego esta última instancia de if, else para que la última palabra guardada en
+                           # palabra auxiliar esté incluida en el diccionario.
             dic[palabra_aux] += 1
             palabra_aux = ''
     else:
