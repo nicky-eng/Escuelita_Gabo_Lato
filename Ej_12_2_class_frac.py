@@ -20,7 +20,7 @@ class Fraction:
         return value
     
     def __init__(self, numerator, denominator):
-        "Constructor of Fraction. numerator and denominator must be numerical."
+        "Constructor of Fraction. Numerator and denominator must be numerical."
         
         self.numerator = Fraction.validate_input(numerator)
         self.denominator = Fraction.validate_input (denominator)
@@ -37,27 +37,6 @@ class Fraction:
         new_denominator = self.denominator * other.denominator
         new_numerator = self.numerator * other.denominator + self.denominator * other.numerator
         
-        #We use the Euclidian Algorithm to find the minimun common denominator
-        m = new_denominator
-        n = new_numerator
-
-        if m >= n: 
-            r = m % n
-            while r != 0:
-                m = n
-                n = r
-                r = m % n
-        else:
-            m, n = n, m
-            r = m % n
-            while r != 0:
-                m = n
-                n = r
-                r = m % n
-
-        new_denominator = int(new_denominator / n)
-        new_numerator = int(new_numerator / n)
-
         return Fraction.simplify(Fraction(new_numerator, new_denominator))
     
     def __mul__(self, other):
@@ -97,6 +76,7 @@ a = Fraction(33, 54)
 print(a)
 
 b = Fraction(8, 9)
+
 print(a + b)
 
 print(a * b)
